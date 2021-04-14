@@ -21,6 +21,17 @@ function addBookToLibrary(book) {
 addBookToLibrary(book);
 addBookToLibrary(book2);
 
+let bookTitle = document.getElementById('newBookTitle');
+let bookAuthor = document.getElementById('newBookAuthor');
+let addBookButton = document.getElementById('addBookButton');
+
+
+addBookButton.addEventListener('click', function() {
+    console.log("working");
+})
+
+
+
 myLibrary.forEach(book => {
     console.log(book);
 });
