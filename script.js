@@ -27,3 +27,7 @@ console.log(myLibrary);
 addBookToLibrary(book2);
 
 console.log(myLibrary);
+
+myLibrary.forEach(book => {
+    console.log(book);
+})
