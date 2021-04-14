@@ -1,3 +1,5 @@
+let myLibrary = [];
+
 function Book (title, author, pages, read) {
     this.title = title;
     this.author = author;
@@ -9,4 +11,19 @@ function Book (title, author, pages, read) {
 }
 
 var book = new Book("The Meaning of Mariah Carey", "Mariah Carey with Michaela Angela Davis", 349, "read");
-alert(book.info());
+var book2 = new Book("The Guest List", "Lucy Foley", 313, "read");
+console.log(book.info());
+
+function addBookToLibrary(book) {
+    myLibrary.push(book);
+}
+
+console.log(myLibrary);
+
+addBookToLibrary(book);
+
+console.log(myLibrary);
+
+addBookToLibrary(book2);
+
+console.log(myLibrary);
